@@ -1,82 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>First task</title>
-        <link rel="Stylesheet" href="Css/style.css">
-      <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@300;600&family=Raleway:wght@200;600&display=swap" rel="stylesheet">
-        <style>
-            body { background: url(Sdu%20bb.jpeg); 
-            background-size: 100%}
-        </style>
-    </head>
-    <body>
-        <div class="content">
-            <div class="head" style="background-color:hsla(196, 95%, 49%, 0.97); height: 80px" >
-                <table cellpadding="25" width="100%" border-spacing="0px" fontcolor="white" >
-                    
-                    <tr>
-                        <th>Home Page</th>
-                        <th>Stuff</th>
-                        <th>Curriculum</th>
-                        <th>Course Schedule</th>
-                        <th>About us</th>
-                    </tr>
-                </table>
-            </div>
-            <div class="photo">
-                <img src="SDU%20LOGO%20png.png" width="300px" height="200px">
-            </div>
-            <div class="page" align="right">
-                <h1>Student Information</h1>
-           
-                <table cellspacing="1"; cellpadding="8" border="1"; width="110%"; bordercolor="#000000">
-                    <tr>
-                        <th>Name</th>
-                        <th>Ramazan</th>
-                        
-                    </tr>
-                     <tr>
-                        <th>Surname</th>
-                        <th>Irmagaliev</th>
-                        
-                    </tr>
-                     <tr>
-                        <th>ID</th>
-                        <th>190103382</th>
-                        
-                    </tr>
-                       <tr>
-                        <th>Email:</th>
-                        <th>190103382@stu.sdu.edu.kz</th>
-                        
-                    </tr>
-                       <tr>
-                        <th>City</th>
-                        <th>Atyrau</th>
-                        
-                    </tr>
-                       <tr>
-                        <th>Advisor</th>
-                        <th>Ualikhan Sadyk</th>
-                        
-                    </tr>
-                       <tr>
-                        <th>Grant type</th>
-                        <th>State grant</th>
-                        
-                    </tr>
-                </table>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body onload="load()">
+    <div id="bg" style="background-image: url('wood.jpg');">
+     <div class="header">
+        <div id="icon" onclick="window.location.reload()" onmouseover = "big(this)" onmouseout ="small(this)">
+        <img src="menu%C2%A0%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png" alt="icon" width="50px"></div>
         
-              
-            </div>
-            <div class="input" >
-                <hr>
-                <h4 align="center">Do you have any problem? </h4>
-            
-                <p><textarea rows="6" cols="80">
-                    </textarea></p>
-            </div>
+        <div id="menu" onclick="change(this)"  onmouseover = "big(this)" onmouseout ="small(this)">MENU</div>
+        
+        <div id="foie_gras" onclick="change(this)" onmouseover = "big(this)"  onmouseout = "small(this)">FOIE GRASS</div>
+        
+        <div id="about_us" onclick="change(this)" onmouseover = "big(this)"  onmouseout = "small(this)">CONFIT DE CANARD </div>
+        
+        <div id="contacts" onclick="change(this)" onmouseover = "big(this)"  onmouseout = "small(this)">SOUPE A L'OIGNON</div>
+        
+    </div>
+    <div class="main">
+        <img class="pic"id="img" src="pexels-fidel-hajj-2814828.jpg" alt="car" width="500px">
+        <div class="text">
+            <h2 id=text1>La Rimany restaurant</h2>
+            <p id="text2">Tender juicy veal tendre topped with creamy sauce. Served on a bed of baked potatoes with rosemary. The aroma is excellent. The taste is amazing. This is just a miracle, not a dish, and this is just one dish.
+</p>
         </div>
-    </body>
+     </div>
+     
+     <script type="text/javascript" src="script.js" ></script>
+
+    </div>
+</body>
 </html>
